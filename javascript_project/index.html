@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1>Resume Genrator</h1><br>
+      <h4>By Mohit Malik</h4>
+    </header>
+   <form class="tofill">
+    <div style="display: flex;">
+    <div class="first_form"> 
+      <h1>Personal Information</h1>
+      <h4>Your Name</h4>
+      <input type="text" placeholder="Enter Here" id = "Iname">
+      <h4>Your Phone</h4>
+      <input type="text" placeholder="Enter Here" id = "Iphone" >
+      <h4>Your address  </h4>
+      <textarea placeholder="Enter Here" class="largebox" id = "Iaddress"></textarea><br>
+      <label for="imagefile">Select your photo</label><br>
+      <input type="file" id="imagefile">
+      <h4 id="imp_link">Important links</h4>
+      <h4>Facebook</h4>
+      <input type="text" placeholder="Enter Here" id = "Ifacebook">
+      <h4>Instagram</h4>
+      <input type="text" placeholder="Enter Here" id = "Iinsta">
+      <h4>Linkdin</h4>
+      <input type="text" placeholder="Enter Here" id = "Ilinkdin">
+
+    </div>
+    <div class="second_form">
+      <h1>Professional Information</h1>
+      <h4>Objective</h4>
+      <textarea placeholder="Enter Here" class="largebox" id ="Iobjective"></textarea>
+      <h4>Work Experience</h4>
+      <div id="Iworkexp">
+        <textarea placeholder="Enter Here" class="largebox"></textarea>
+      </div>
+      <br><br>
+      <button id="work_exp" onclick="addWorkExp()" type="button">add</button>
+      <h4>Acedmic Qualification</h4>
+      <div id="Iacdqua">
+        <textarea placeholder="Enter Here" class="largebox"></textarea>
+      </div>
+      <br><br>
+      <button id="Acedmic_qual" type="button" onclick="addAcdQua()">add</button>
+    </div>
+  </div>
+  <div class="submit_button">
+  <button type="button" onclick="changetoResume()"> Generate Resume</button>
+  </div>
+   </form>
+  </div>
+   <!-- html for resume  -->
+   <div class="resume">
+    <div class="personal_details">
+      <div class="photo">
+        <img src="C:\Users\malik\OneDrive\Desktop\javascript_project\default.png" alt="dafault img here" id = "profilephoto">
+      </div>
+      <div class="pinfo">
+      <h1 id="Rname">Name Here</h1>
+      <h3 id="Rpinfo">Personal Information</h3> <hr>
+      <h4>Address:</h4>
+      <p id = "Raddress">address heresfsfsf</p>
+      <h4>Phone:</h4>
+      <p id="Rphone">phone heree</p>
+      <h4>Facebook:</h4>
+      <p id="Rfacebook">link here</p>
+      <h4>Instagram:</h4>
+      <p id="Rinsta">link here</p>
+      <h4>Linkdin:</h4>
+      <p id="Rlinkdin">link here</p>
+      
+      </div>
+    </div>
+    <div class="proffesional_details">
+      <div class="Pcontent">
+        <h1>Objective</h1>
+        <hr>
+        <p id = "Robjective"></p>
+        <h1>Work Experience</h1>
+        <hr>
+        <ul id = "Rworkexp"></ul>
+        <h1>Acedmic Qualification</h1>
+        <hr>
+        <ul id = "Racdqua"></ul>
+      </div>
+    </div>
+   </div>
+
+
+  <script src="JS.js"></script>
+</body>
+</html>
