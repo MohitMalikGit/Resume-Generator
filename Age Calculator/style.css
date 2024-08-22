@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  box-sizing: border-box
+}
+body{
+  background-color: rgb(188, 185, 185);
+}
+.content{
+  margin: 100px 50px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px 30px;
+}
+.content h4{
+  text-align: left;
+  width: 100%;
+}
+.content input{
+  justify-self: left;
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+}
+#agetext{
+  display: none;
+}
